@@ -11,8 +11,8 @@ import java.util.List;
 
 public class PlikRaportu {
 
-    public static final List<Oddzial.Ruch> ruchy = new ArrayList<>();
-    private static final List<String> listaRuchow = new ArrayList<>();
+    public static List<Oddzial.Ruch> ruchy = new ArrayList<>();
+    private static List<String> listaRuchow = new ArrayList<>();
 
     public static void dodajRuch(String przedRuchem, final Oddzial.Ruch ruch) {
         ruchy.add(ruch);
@@ -54,5 +54,10 @@ public class PlikRaportu {
             zapis.write("\n");
         }
         zapis.close();
+    }
+
+    public static void wyczyscListy() {
+        ruchy = new ArrayList<>();
+        listaRuchow = new ArrayList<>();
     }
 }

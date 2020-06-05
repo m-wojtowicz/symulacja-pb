@@ -42,6 +42,7 @@ public class Symulacja {
         listaOddzialow = Oddzial.utworzListeOddzialow();
         listaDowodcow = Dowodca.utworzListeDowodzcow(listaOddzialow);
         listaObiektowGranicy = ObiektGranicy.utworzListeObiektowGranic();
+        PlikRaportu.wyczyscListy();
         powtorzenie = 0;
         dzialanieSymulacji = true;
         plansza = new Plansza(szerokosc, wysokosc, listaWspolrzednych, listaObiektow, listaOddzialow, listaDowodcow, powtorzenie);

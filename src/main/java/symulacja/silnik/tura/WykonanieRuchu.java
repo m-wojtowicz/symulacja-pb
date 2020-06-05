@@ -87,7 +87,6 @@ public class WykonanieRuchu {
             } else docelowePole = Pole.utworzPole(docelowePole.wspolrzedne, docelowePole.odczytajObiekt(), docelowePole.odczytajOddzial());
         }
 
-
         for(Pole pole : Mapa.listaPol) {
             if(pole.wspolrzedne == poczatkowePole.wspolrzedne) {
                 nowaListaPol.add(poczatkowePole);
@@ -156,5 +155,4 @@ public class WykonanieRuchu {
             Mapa.listaPol = nowaListaPol;
         }
     }
-
 }

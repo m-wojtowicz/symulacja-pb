@@ -88,6 +88,7 @@ public class PasekBoczny extends JPanel {
             }
             modelStats.wypelnijTabele();
             modelLog.wypelnijTabele();
+            modelLog.fireTableDataChanged();
             mapaPanel.rysujMape(mapa);
             validate();
             aktualizujScroll();

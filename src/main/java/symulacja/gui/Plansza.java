@@ -28,7 +28,7 @@ public class Plansza {
     private static final Color jasnyKolorPola = Color.decode("#228B22");
     private static final Color ciemnyKolorPola = Color.decode("#006400");
 
-    private static String sciezkaIkon = "ikony/";
+    private static String sciezkaIkon = "zasoby/ikony/";
 
 
     public Plansza(final int szerokosc, final int wysokosc,
