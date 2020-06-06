@@ -63,7 +63,9 @@ public class Plansza {
     }
 
     private Dimension obliczWymiary() {
-        return new Dimension(Symulacja.odczytajSzerokosc() * 50 + 280, Symulacja.odczytajWysokosc() * 50 + 70);
+        int y = Symulacja.odczytajWysokosc() * 50 + 70;
+        if (y < 700) y = 700;
+        return new Dimension(Symulacja.odczytajSzerokosc() * 50 + 280, y);
     }
 
     protected static class MapaPanel extends JPanel {
